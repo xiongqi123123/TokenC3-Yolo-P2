@@ -1,0 +1,10 @@
+*.pt
+yolov13_UAV_Sheep/
+ultralytics.egg-info/
+logs/
+LSNet_TokenC3_Innovation_Summary.md
+TokenC3_Guide.md
+annotations.json
+result.json
+*.pdf
+*.whl
