@@ -1,5 +1,6 @@
 *.pt
 yolov13_UAV_Sheep/
+yolov13_UAV-Sheep_Self/
 ultralytics.egg-info/
 logs/
 LSNet_TokenC3_Innovation_Summary.md

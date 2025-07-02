@@ -24,15 +24,15 @@ logging.info(f"Starting tokenc3_lsnet_p2 training...")
 # 训练参数 - 针对小目标优化
 results = model.train(
     # ====== 基础参数 ======
-    data='/home/qi.xiong/Dataset/UAV_Sheep/yolo_dataset/dataset.yaml',  # 数据集配置文件路径
+    data='/home/qi.xiong/Dataset/UAV-Sheep_Self/dataset.yaml',  # 数据集配置文件路径
     epochs=500,                # 训练轮数
-    batch=64,                 # 批次大小
+    batch=16,                 # 批次大小
     imgsz=640,                 # 输入图片尺寸
-    device="4,5,6,7",                # 使用的GPU设备ID（如"0"、"0,1"等）
+    device="4,5",                # 使用的GPU设备ID（如"0"、"0,1"等）
 
     # ====== 优化器与学习率 ======
     optimizer='SGD',           # 优化器类型（可选：SGD, Adam, AdamW等）
-    lr0=0.01,                  # 初始学习率
+    lr0=0.001,                  # 初始学习率
     lrf=0.01,                  # 最终学习率因子（最终lr = lr0 * lrf）
     momentum=0.937,            # SGD动量
     weight_decay=0.0005,       # 权重衰减
@@ -73,7 +73,7 @@ results = model.train(
     exist_ok=False,             # 是否允许覆盖已存在的实验目录 
 
     # ====== 日志与实验管理 ======
-    project='yolov13_UAV_Sheep',  # 项目名称
+    project='yolov13_UAV-Sheep_Self',  # 项目名称
     name='tokenc3_lsnet_p2',                  # 实验名称
 
     # ====== 评估与保存格式 ======

@@ -1,0 +1,6 @@
+2025-07-01 12:46:48,277 - PAGCP - INFO - YOLOv8 Auto-detected groups: 0
+2025-07-01 12:46:52,556 - PAGCP - INFO - Baseline losses - Box: 1000.0000, Obj: 1000.0000, Cls: 1000.0000
+2025-07-01 12:46:52,690 - PAGCP - INFO - Starting layer-wise sensitivity analysis...
+2025-07-01 12:46:52,691 - PAGCP - INFO - Found 207 prunable layers, analyzing all layers...
+2025-07-01 12:46:52,756 - PAGCP - INFO - Sensitivity analysis completed for 207 layers
+2025-07-01 12:46:52,756 - PAGCP - INFO - Computed optimal ratios for 207 layers
